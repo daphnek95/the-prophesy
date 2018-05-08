@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/*full page images should be 2560x1920*/
+/*
+
+  Daphne Kraft - daphnelizabeth.studio
+  copyright 2018
+
+*/
+
+
+/* ---------------------------------
+----------- TYPOGRAPHY -------------
+----------------------------------*/
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.zilla {
+  font-family: 'Zilla Slab', serif;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 4em;
+  margin-bottom: -.1em;
+  text-align: center;
+}
+
+p,
+a {
+  font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: #FCCBB0;
+  text-decoration: none;
+  -webkit-transition: color .3s; /* Safari */
+    transition: color .3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1,
+p,
+a {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+/* ---------------------------------
+------------- GENERAL --------------
+----------------------------------*/
+
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.removed {
+  display: none;
+}
+
+html,
+body {
+  color: white;
+  background-color: #3f3e1f;
+  background-image: url('../nasty-fabric.png');
+  margin: 0;
+  padding: 0;
+}
+
+#main-content {
+  margin: 1.54em 2.25em;
+}
+
+.art-group {
+  margin-top: 4em;
+  text-align: center;
+}
+
+img {
+  max-width: 350px;
+  width: 70%;
+  height: auto;
+}
+
+/* footer */
+#footer {
+  background: rgba(0,0,0,0.5);
+  padding-left: .54em;
+  padding-bottom: .35em;
+  padding-top: .35em;
+}
+
+#to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: .15em;
+  right: .25em;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(0,0,0,0);
+  color: #FCCBB0;
+  cursor: pointer;
+  padding: .25em;
+}
+
+#to-top-btn:hover {
+  color: #CC796C;
+}
+
+#footer .fa-angle-up {
+  font-size: 2em;
+}
+
+
+/* ---------------------------------
+------------- LIGHTBOX -------------
+----------------------------------*/
+.lb-data {
+  font-family: 'Lato', sans-serif!important;
+}
+
+/* ---------------------------------
+---------- MEDIA QUERIES -----------
+----------------------------------*/
+@media all and (min-width: 600px) {
+  h1 {font-size: 5em;}
+}
+
+@media all and (min-width: 700px) {
+  h1 {font-size: 6em;}
+}
